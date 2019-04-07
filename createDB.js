@@ -11,9 +11,7 @@ mongoose.connect(uri, {useNewUrlParser: true, useCreateIndex :  true});
 
 var async = require('async')
 var MusleCar = require('./models/muslecar').MusleCar;
-// очистим бд
-// вставим 5 героев
-// закроем соединение с бд
+
 function open(callback) {
   mongoose.connection.on('open', callback)
 }
